@@ -9,4 +9,5 @@ Players choose how many rounds to play (1–5) and answer simple arithmetic ques
 1. Open `index.html` in your web browser (double-click or serve it via a static file server).
 2. (Optional) Open Developer Tools  Console if you want to see debug logs.
 3. Click the "Start Game" button and follow the prompts.
+4. Click the "Show tips" button and look at the tips to play.
 
