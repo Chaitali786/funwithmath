@@ -1,6 +1,19 @@
+function showTips() {
+  const tips = [
+    "Enter numbers only when prompted.",
+    "For division answers, decimals are allowed (e.g. 0.33).",
+    "You can cancel any prompt to end the game early.",
+  ];
+
+  for (let i = 0; i < tips.length; i++) {
+    alert(`Tip ${i + 1}: ${tips[i]}`);
+    //console.log(`Tip ${i + 1}: ${tips[i]}`);
+  }
+}
+
 function startGame() {
   //console.log("startGame called");
-
+  //showTips();
   const operations = ["addition", "subtraction", "multiplication", "division"];
   let score = 0;
   let roundsPlayed = 0;
@@ -14,7 +27,7 @@ function startGame() {
   if (totalRounds >= 5) {
     alert("Enter number between 1-5 !!! You can have max 5 chances only !");
   } else if (isNaN(totalRounds) || totalRounds <= 0) {
-    alert("Invalid input. Game cancelled.");
+    alert("Invalid input ! Game cancelled.");
   } else {
     while (roundsPlayed < totalRounds) {
       let randomIndex = Math.floor(Math.random() * operations.length);
